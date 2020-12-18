@@ -70,16 +70,16 @@ def test_function(test_case):
         print("Fail")
 
 test_function([[6, 7, 8, 9, 10, 1, 2, 3, 4], 6])
-#"Pass"
+#returned index 0
 test_function([[6, 7, 8, 9, 10, 1, 2, 3, 4], 1])
-#"Pass"
+#returned index 5
 test_function([[6, 7, 8, 1, 2, 3, 4], 8])
-#"Pass"
+#return index 2
 test_function([[6, 7, 8, 1, 2, 3, 4], 1])
-#"Pass"
+#returned index 3
 test_function([[6, 7, 8, 1, 2, 3, 4], 10])
-#"Pass"
+#-1
 test_function([[6, 7, 8, 1, 2, 3, 4], 5])
-#"Pass"
-test_function([[], 1])
-#"Pass"
+#5
+test_function([[], -1])
+#-1

@@ -89,7 +89,12 @@ test_case4 = [[1,2], [2, 1]]
 test_case5 = [[2,5,7,0], [72,50]]
 
 test_function(test_case1)
+#[542, 31]
 test_function(test_case2)
+#[964, 852]
 test_function(test_case3)
+#[0, 0]
 test_function(test_case4)
+#[2, 1]
 test_function(test_case5)
+#[72,50]
