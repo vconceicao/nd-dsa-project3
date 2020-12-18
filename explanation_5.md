@@ -5,11 +5,11 @@ A Trie is data-structure good for re**trie**val of data.  It offers advantage ov
 
 
 ### Time Complexity:
-To insert in the Trie, we have to consider the **lenght of the input** **O(n)** as we have to iterate through it to add the chars invidually in each node. Each node itself has a **dictionary** to store other nodes, because of it we have to check if the char is in the dictionary, **O(d)** is the size of the dictionary. At the end, we have **O(n*d)**.  
+**Insert** in the Trie, we have to consider the **lenght of the word** **O(n)** as we have to iterate through it to add the chars invidually in each node. Each node itself has a **dictionary** to store other nodes, because of it we have to check if the char is in the dictionary, **O(d)** is the size of the dictionary. At the end, we have **O(n*d)**. 
+**Find** function has the same time complexity of insert function taking in consideration the lenght of the input and length of the dictionary. **O(n*d)**. 
+**Suffixes** function is using recursive calls in each node to collect the chars and converting them into words. We have to consider the iteration of each key of the dictionary **O(n)** and the recursive calls using the keys **O(m)**. A the end we have **O(n*m)**
 
-Find function has the same time complexity of insert function taking in consideration the lenght of the input and length of the dictionary. **O(n*d)**
-
-Suffixes function is using recursive calls in each node to collect the chars and converting them into words. We have to consider the iteration of each key of the dictionary **O(n)** and the recursive calls using the keys **O(m)**. A the end we have **O(n*m)**
+ However if the length of input is minor than the quantity of char inside the Trie, the time complexity could be rounded to **O(n)**
 
 ### Space Complexity:
 The Space Complexity takes linear time  **O(n)** at worst cases, considering the numbers of chars of the alphabet that can be in the dictionary.

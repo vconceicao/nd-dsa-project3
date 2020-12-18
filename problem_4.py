@@ -12,13 +12,13 @@ def sort_012(input_list):
    
     while index <= right: #with this condition we avoid messing with already sorted 2 numbers at right
       
-        if input_list[index] == 2:   #check if the element is two
+        if input_list[index] == 2:   #check if the element is 2
                       
             input_list[index], input_list[right] = input_list[right], input_list[index] 
             right-=1 # increment right index, to put next number 2 found in the list
             #this condition will not increment the var index, to not left any number 2 behind
         
-        elif input_list[index] == 0: #check if the element is two
+        elif input_list[index] == 0: #check if the element is 0
             input_list[index], input_list[left] = input_list[left], input_list[index] 
             left+=1 # increment the left index, to put next number 2 found in the list
             index+=1  # the array will be incremented, to avoid passing other number that is not 0 to the left
